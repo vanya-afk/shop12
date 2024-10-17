@@ -1,0 +1,45 @@
+2024-10-17T08:10:08+00:00 DEBUG POST: https://ads.tiktok.com/marketing_api/api/developer/app/create_auto_approve/
+
+{"business_platform":"PROD","smb_id":"tt4b_woocommerce_6710c660ca6bahttpmysite9ruswp-admin","smb_name":"PROD","redirect_url":"http:\/\/mysite9.rus\/wp-admin\/"}
+ ajax: no
+2024-10-17T08:10:10+00:00 DEBUG Tt4b_Mapi_Class::create_open_source_app: Response: 
+
+HTTP/1.1 200 OK
+Content-Type: application/json
+X-Tt-Logid: 2024101708100934D4DF6CC076B413A0D3,2024101708100934D4DF6CC076B413A0D3
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+x-tt-trace-host: 01c69f1d9c4bd51144225a54840160054efda59450c9d3e702794b418f03194c4790f029a23dc7709361750c7c1a609b0a8a8b5b9cb3113303e52e9458766bc41c1ec3095996647e5b4a0db1153f47d74a7b496c2e1d8fe5b9a00aeb32243458cb4e9066b401b82f5db06332a538cac654
+x-tt-trace-id: 00-24101708100934D4DF6CC076B413A0D3-112C35B1121A88CD-00
+Server: TLB
+Content-Encoding: gzip
+Content-Length: 202
+X-Origin-Response-Time: 108,23.40.40.140
+X-Akamai-Request-ID: 46667b78.900a8b8d
+Date: Thu, 17 Oct 2024 08:10:10 GMT
+X-Cache: TCP_MISS from a2-23-186-22.deploy.akamaitechnologies.com (AkamaiGHost/11.6.5-0c617a4be13e71cac2c90d10d87ecf54) (-)
+Connection: close
+Vary: Accept-Encoding
+X-Cache-Remote: TCP_MISS from a23-40-40-140.deploy.akamaitechnologies.com (AkamaiGHost/11.6.5-0c617a4be13e71cac2c90d10d87ecf54) (-)
+x-tt-trace-tag: id=16;cdn-cache=miss;type=dyn
+Server-Timing: cdn-cache; desc=MISS, edge; dur=179, origin; dur=108
+Server-Timing: inner; dur=102
+X-Parent-Response-Time: 286,2.23.186.22
+
+{"code":0,"msg":"ok","data":{"redirect_uri":"http:\/\/mysite9.rus\/wp-admin\/","app_secret":"a2e3f7f93f0356b8026586364bc9e0be1ca9c390","app_id":"7426653910527377425","external_data_key":"fa8ca582-cf7a-41fb-a423-e95c3ad339ea"}}
+
+2024-10-17T08:11:47+00:00 DEBUG POST: https://business-api.tiktok.com/tbp/v2.0/business_profile/disconnect?external_data=
+
+{"business_platform":"WOO_COMMERCE","external_business_id":"tt4b_woocommerce_6710c660ca6ba"}
+ ajax: no
+2024-10-17T08:11:48+00:00 ERROR Tt4b_Mapi_Class::tbp_post: Response: 
+
+http_request_failed: cURL error 60: SSL certificate problem: unable to get local issuer certificate
+
+2024-10-17T08:11:48+00:00 DEBUG POST: https://business-api.tiktok.com/tbp/v2.0/shop/connection/disconnect?external_data=
+
+--- EMPTY STRING ---
+ ajax: no
+2024-10-17T08:11:53+00:00 ERROR Tt4b_Mapi_Class::tts_shop_disconnect: Response: 
+
+http_request_failed: cURL error 28: Operation timed out after 5014 milliseconds with 0 out of 0 bytes received
+
